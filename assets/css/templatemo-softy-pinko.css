@@ -383,7 +383,8 @@ a.main-button-slider {
   padding: 12px 20px;
   background-color: #f2d230;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
+  font-weight: 600;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -714,13 +715,13 @@ welcome
   background-image: url("../img/Group\ 14.jpg");
   height: 610px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center right;
+  background-size: 85%;
 }
 
 .welcome-area .header-text {
   position: absolute;
-  top: 290px;
+  top: 351px;
   transform: translateY(-55%);
   text-align: left;
   width: 100%;
@@ -729,8 +730,8 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 500;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 45px;
+  line-height: 48px;
   margin-bottom: 9px;
   color: black;
 }
@@ -872,7 +873,7 @@ features
 
 .home-feature {
   z-index: 9;
-  margin-top: 0;
+  margin-top: -87px;
   background-image: url(../img/bg_jasakami.jpg);
   background-position: center center;
   background-size: 100% 100%;
