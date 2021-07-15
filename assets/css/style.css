@@ -1,0 +1,412 @@
+/* 
+---------------------------------------------
+preloader
+--------------------------------------------- 
+*/
+#preloader {
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #f2d230 0%, #8c4303 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* header */
+#home {
+  height: 730px;
+  background-image: url(../gambar/bgheader.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+#home .text {
+  position: relative;
+  left: 50px;
+  top: 250px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+#home .text .judul {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 98%;
+}
+#home .text .judul .digital {
+  color: #016502;
+}
+#home .text .judul .in {
+  color: #c0d605;
+}
+#home .text .subjudul {
+  font-weight: 600;
+  font-size: 48px;
+}
+#home .text .textjudul {
+  font-weight: 500;
+  font-size: 27px;
+  color: #625e5e;
+  line-height: 70%;
+}
+#home .text .tbljudul {
+  background: #7ab609;
+  border-color: #7ab609;
+  width: 269px;
+  height: 64px;
+  box-shadow: 7px 7px 25px rgba(126, 184, 8, 0.72);
+  font-size: 24px;
+  border-radius: 20px;
+  margin-top: 23px;
+}
+
+#jasakami {
+  padding-top: 64px;
+  font-family: Poppins;
+  font-style: normal;
+  overflow: hidden;
+}
+#jasakami .header {
+  text-align: center;
+}
+#jasakami .header .subjudul {
+  font-size: 48px;
+  font-weight: 600;
+}
+#jasakami .header .textjudul {
+  font-size: 27px;
+  font-weight: 500;
+  color: #625e5e;
+  line-height: 40px;
+}
+#jasakami .body {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+#jasakami .body .card {
+  box-shadow: 10px 10px 28px rgb(0 0 0 / 10%);
+  border-radius: 19px;
+  border: 0;
+  border-bottom: 10px solid #88b534;
+  margin-bottom: 43px;
+}
+#jasakami .body .card-body {
+  padding: 0;
+  text-align: center;
+  padding-top: 59px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+#jasakami .body .gbrjasakami {
+  width: 100%;
+  height: auto;
+}
+#jasakami .body .juduljasa {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+#jasakami .body .lihatlainnya {
+  font-size: 24px;
+  color: #625e5e;
+  text-shadow: 0px 5px 6px rgb(0 0 0 / 30%);
+  margin-top: -20px;
+  display: block;
+  text-align: right;
+}
+
+#wujudkan {
+  padding-top: 60px;
+  font-family: Poppins;
+  font-style: normal;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+#wujudkan .gbr {
+  text-align: center;
+}
+#wujudkan .text {
+  padding: 0 65px;
+}
+#wujudkan .subjudul {
+  font-size: 48px;
+  font-weight: 600;
+}
+#wujudkan .textjudul {
+  font-size: 27px;
+  font-weight: 500;
+  color: #625e5e;
+  line-height: 36px;
+}
+#wujudkan .tbljudul {
+  background: #7ab609;
+  border-color: #7ab609;
+  width: 358px;
+  height: 76px;
+  box-shadow: 7px 7px 25px rgba(53, 53, 53, 0.2);
+  font-size: 24px;
+  border-radius: 20px;
+  margin-top: 23px;
+}
+
+#portofolio {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  background: linear-gradient(
+    115.32deg,
+    rgba(122, 182, 9, 0.8) 0.4%,
+    rgba(192, 214, 5, 0.8) 83.6%
+  );
+}
+#portofolio .subjudul {
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+#portofolio .linejudul {
+  width: 100px;
+  border: 3px solid #000000;
+  margin-bottom: 44px;
+}
+#portofolio .nav-tabs .nav-item.show .nav-link,
+#portofolio .nav-tabs .nav-link.active {
+  color: #000000;
+  background-color: white;
+  border-color: transparent;
+}
+#portofolio .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #262e3c;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  min-width: 199px;
+  min-height: 62px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#portofolio .nav-tabs .nav-link:focus:hover {
+  border-color: transparent;
+  background-color: white;
+  color: #000000;
+}
+#portofolio .nav-tabs .nav-link:hover {
+  border-color: transparent;
+  background-color: grey;
+}
+#portofolio .nav-tabs {
+  border: unset;
+}
+#portofolio .tab-content .tab-pane .row {
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+#portofolio .tab-content .tab-pane .container {
+  padding: 0 10%;
+}
+
+#alasan {
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: Poppins;
+  font-style: normal;
+}
+#alasan .mini-content {
+  position: relative;
+  z-index: 3;
+}
+#alasan .subjudul {
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+#alasan .textjudul {
+  font-weight: 500;
+  font-size: 27px;
+  color: #625e5e;
+  text-align: center;
+  line-height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#alasan .body {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#alasan .mini-content .info {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#alasan .mini-content .info small {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#alasan .mini-content .info strong {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 40px;
+  display: block;
+}
+#alasan .mini-content .info h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+}
+#alasan .mini-content .info p {
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #fff;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 15px;
+}
+#alasan .mini-content .info p span {
+  text-decoration: underline;
+}
+#alasan .mini-content .mini-box {
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 182, 9, 0.8) 0%,
+    rgba(192, 214, 5, 0.8) 100%
+  );
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  height: 290px;
+}
+#alasan .mini-content .mini-box:hover {
+  margin-top: -10px;
+}
+#alasan .mini-content .mini-box:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #1e1e1e;
+  width: 100%;
+  opacity: 0.15;
+  height: 100%;
+  bottom: -10px;
+  left: 0px;
+  right: -20px;
+  margin: auto;
+  border-radius: 20px;
+}
+#alasan .mini-content .mini-box i {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#alasan .mini-content .mini-box span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1e1e1e;
+  letter-spacing: 0.75px;
+}
+#alasan .mini-content .mini-box strong {
+  display: block;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  height: 72px;
+}
